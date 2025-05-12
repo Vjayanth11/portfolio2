@@ -1,48 +1,60 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <header>
+    <h1>Your Name</h1>
+    <p>Web Developer | Designer | Freelancer</p>
     <nav>
-      <a href="#">Works</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </header>
 
-    <div class="intro">
-      <div class="intro-text">
-        <h1>Hi, I am Jayanth,<br />Aspiring Software Developer</h1>
-        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        <button onclick="downloadResume()">Download Resume</button>
-      </div>
-      <div class="profile-pic">
-        <img src="https://i.imgur.com/BOB7d1g.png" alt="Profile picture" />
-      </div>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a passionate web developer based in Bengaluru, India. I specialize in building responsive and user-friendly websites.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5 & CSS3</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio website to showcase my projects and skills.</p>
     </div>
-
-    <div class="recent-posts">
-      <h2>Recent posts <a href="#" style="float:right; font-size: 0.9rem;">View all</a></h2>
-      <div class="posts">
-        <div class="post">
-          <h3>Making a design system from scratch</h3>
-          <small>12 Feb 2020 | Design, Pattern</small>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint...</p>
-        </div>
-        <div class="post">
-          <h3>Creating pixel perfect icons in Figma</h3>
-          <small>12 Feb 2020 | Figma, Icon Design</small>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint...</p>
-        </div>
-      </div>
+    <div class="project">
+      <h3>Task Manager App</h3>
+      <p>A web application to manage daily tasks with user authentication.</p>
     </div>
-  </div>
+  </section>
 
-  <script src="script.js"></script>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com</p>
+    <p>Phone: +91-1234567890</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
 </body>
 </html>

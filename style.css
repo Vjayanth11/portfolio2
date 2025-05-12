@@ -1,101 +1,67 @@
+/* Reset some default styles */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f78da7;
+  line-height: 1.6;
+  background-color: #f4f4f4;
   color: #333;
 }
-.container {
-  max-width: 1000px;
-  margin: auto;
-  background-color: white;
-  padding: 2rem;
-  box-shadow: 10px 10px 0 #61c0d9;
-  margin-top: 2rem;
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
-nav {
-  text-align: right;
+
+header h1 {
+  margin-bottom: 10px;
 }
+
 nav a {
-  margin: 0 1rem;
+  color: #fff;
+  margin: 0 15px;
   text-decoration: none;
-  color: black;
-  font-weight: bold;
 }
-.intro {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+
+nav a:hover {
+  text-decoration: underline;
 }
-.intro-text {
-  max-width: 500px;
+
+section {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
 }
-.intro-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+
+section h2 {
+  margin-bottom: 10px;
+  color: #333;
 }
-.intro-text p {
-  margin-bottom: 1rem;
-  color: #555;
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
 }
-.intro-text button {
-  padding: 0.7rem 1.5rem;
-  background-color: #ff5e5e;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 5px;
+
+.project {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #333;
 }
-.profile-pic img {
-  border-radius: 50%;
-  width: 150px;
-}
-.recent-posts {
-  background-color: #e8f7fc;
-  padding: 2rem;
-  margin-top: 2rem;
-}
-.recent-posts h2 {
-  margin-bottom: 1rem;
-}
-.posts {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.post {
-  background-color: white;
-  padding: 1rem;
-  flex: 1;
-  min-width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.post h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-.post p {
-  font-size: 0.9rem;
-  color: #666;
-}
-.post small {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #999;
-}
-@media (max-width: 768px) {
-  .intro {
-    flex-direction: column;
-    text-align: center;
-  }
-  .intro-text, .profile-pic {
-    width: 100%;
-  }
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
